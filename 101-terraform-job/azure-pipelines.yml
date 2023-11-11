@@ -1,4 +1,7 @@
 pr: none
+- task: TerraformInstaller@1
+  inputs:
+    terraformVersion: '0.10.3'
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
