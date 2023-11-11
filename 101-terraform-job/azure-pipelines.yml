@@ -9,7 +9,7 @@ pr: none
     subscriptionId: '4f29d094-1079-44c9-acb0-4d73a7a2dd34'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'terraform'
-    location: 'Central US'
+    location: 'CentralUS'
     templateLocation: 'Linked artifact'
     deploymentMode: 'Incremental'
 - task: TerraformInstaller@1
