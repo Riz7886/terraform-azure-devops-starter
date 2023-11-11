@@ -5,7 +5,7 @@ pr: none
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'terraform'
+    azureResourceManagerConnection: 'terraform01'
     subscriptionId: '4f29d094-1079-44c9-acb0-4d73a7a2dd34'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'terraform'
