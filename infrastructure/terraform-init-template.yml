@@ -8,7 +8,7 @@ parameters:
   TerraformBackendResourceGroup: terraform
   TerraformBackendStorageAccount: syedrizvi007
   TerraformBackendStorageContainer: terraformstate
-  TerraformBackendLocation: Central US
+  TerraformBackendLocation: CentralUS
 
 steps:
 
