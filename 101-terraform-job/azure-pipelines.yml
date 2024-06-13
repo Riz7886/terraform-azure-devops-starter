@@ -1,9 +1,9 @@
 pr: none
-- task: TerraformInstaller@1
-  inputs:
+  - task: TerraformInstaller@1
+    inputs:
     terraformVersion: '0.10.3'
-- task: AzureResourceManagerTemplateDeployment@3
-  inputs:
+  - task: AzureResourceManagerTemplateDeployment@3
+    inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'terraform01'
     subscriptionId: '4f29d094-1079-44c9-acb0-4d73a7a2dd34'
@@ -12,8 +12,8 @@ pr: none
     location: 'CentralUS'
     templateLocation: 'Linked artifact'
     deploymentMode: 'Incremental'
-- task: TerraformInstaller@1
-  inputs:
+  - task: TerraformInstaller@1
+    inputs:
     terraformVersion: '0.10.3'
 trigger:
   branches:
@@ -24,11 +24,11 @@ trigger:
     - 101-terraform-job/
 
 variables:
-- group: terraform
+ - group: terraform
 
 stages:
 
-- template: terraform-stages-template.yml
+ - template: terraform-stages-template.yml
   parameters:
     environment: test
     environmentDisplayName: Test
